@@ -52,6 +52,8 @@
 
 /* Подпись дней */
 .day-title {
+    display: flex;
+    justify-content: center;
     padding: 5px;
     border: 2px solid black;
     text-align: center;
@@ -74,90 +76,135 @@
 /* Таблица времени */
 .shedule__time-card {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    white-space: nowrap;
     border: 1px solid black;
 }
 
-.shedule__time-card div {
-    align-content: center;
-    padding: 5px;
+.shedule__time-card tbody {
+    display: inherit;
+}
+
+.time-card__row {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+}
+
+.time-card__number {
     border: 1px solid black;
 }
 
-.time-table__recess {
+.time-card__number span {
     display: flex;
+    height: 100%;
     align-items: center;
+    justify-self: center;
+}
+
+.time-card__time {
+    border: 1px solid black;
+}
+
+.time-card__time span {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-self: start;
+    padding-left: 5px;
+}
+
+.time-card__recess {
     grid-column: 1/3;
+    border: 1px solid black;
+}
+
+.time-card__recess span {
+    display: flex;
+    justify-content: left;
+    padding-left: 5px;
+    align-items: center;
+    height: 100%;
 }
 
 /* Карточка дня */
 .day-card {
     display: grid;
+    position: relative;
     border: 1px solid black;
 }
 
-/* Предмет */
+.day-card tbody {
+    display: inherit;
+}
+
+.day-card__date {
+    position: absolute;
+    top: -16px;
+    left: -1px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
 .day-card__lesson {
-    position: relative;
     display: grid;
-    grid-template-columns: 1fr 7fr 2fr; 
+    grid-template-columns: 28px 1fr 40px;
 }
 
-/* Номер */
 .lesson__number {
-    align-content: center;
-    padding: 5px;
+    border: 1px solid black;
 }
 
-/* Название предмета */
+.lesson__number span {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .lesson__name {
-    width: 140px;
-    align-content: center;
-    padding: 5px;
-    white-space: nowrap;
-    overflow-x: hidden;
+    position: relative;
+    border: 1px solid black;
 }
 
-/* Тип предмета */
+.lesson__name span {
+    display: flex;
+    height: 100%;
+    justify-content: start;
+    padding-left: 5px;
+    align-items: center;
+}
+
 .lesson__type {
     position: absolute;
-    top: -1px;
-    right: 55px;
-    align-content: end;
+    top: -8px;
+    right: 3px;
     font-size: 12px;
 }
 
-/* Аудитория */
 .lesson__place {
-    align-content: center;
-    padding: 5px;
+    border: 1px solid black;
+}
+
+.lesson__place span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     font-size: 12px;
-    /* font-style: italic; */
-    font-weight: 700;
+    font-weight: 600;
 }
 
-.lesson__number, .lesson__name, .lesson__place {
-    border: 1px solid black;
-}
-
-/* Перерыв */
 .day-card__recess {
-    padding: 5px;
+    grid-column: 1/4;
     border: 1px solid black;
-}
-
-.day-card__recess span {
-    color: transparent;
-    user-select: none;
+    color: white;
 }
 
 /* Для телефона (Временно) */
-
 @media screen and (max-width: 728px) {
-    body {
-        background: red;
+
+    .page-navigation {
+        display: none;
     }
+
     .shedule {
         grid-template-columns: 1fr;
         grid-template-rows: 0 repeat(14, 1fr);
@@ -169,11 +216,10 @@
 
     .day-card {
         margin: auto;
-        width: 31vw;
+        width: 44vw;
     }
 
     .day-card__lesson {
-        /* display: flex; */
-        /* width: 100%; */
+        height: 32px;
     }
 }
