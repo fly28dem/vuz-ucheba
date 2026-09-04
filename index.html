@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВУЗ | Учёба &mdash; расписание</title>
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+    <nav class="page-navigation">
+        <ul>
+            <li>
+                <a class="logo-container" href="./index.html">
+                    <div class="logo">Учёба</div>
+                </a>
+            </li>
+            <li>
+                <a href="./index.html">Расписание</a>
+            </li>
+            <li>
+                <a href="./index.html">ДЗ</a>
+            </li>
+            <li>
+                <a href="./index.html">Посещения</a>
+            </li>
+            <li>
+                <a href="./index.html">Дневник</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="wrapper">
+
+        <div class="shedule">
+
+                <!-- <div class="shedule__title-line"> -->
+                    <div></div>
+                    <div class="shedule__time-card">
+                        <div>№</div>
+                        <div>Время</div>
+                    </div>
+                    
+                    <div class="day-title">ПН</div>
+                    <div class="day-title">ВТ</div>
+                    <div class="day-title">СР</div>
+                    <div class="day-title">ЧТ</div>
+                    <div class="day-title">ПТ</div>
+                    <div class="day-title">СБ</div>
+                <!-- </div> -->
+
+                <!-- <div class="shedule__numerator-line"> -->
+                    <div class="week-title top-expand"><div>Числитель</div></div>
+                    <div class="shedule__time-card">
+                        <div>1</div>
+                        <div>8:30-9:55</div>
+                        <div>2</div>
+                        <div>10:05-11:30</div>
+                        <div>3</div>
+                        <div>11:40-13:05</div>
+                        <div class="time-table__recess">Перерыв</div>
+                        <div>4</div>
+                        <div>13:45-15:10</div>
+                        <div>5</div>
+                        <div>15:20-16:45</div>
+                        <div>6</div>
+                        <div>16:55-18:20</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практика
+                            <span class="lesson__type">(прак.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Произв. практика
+                            <span class="lesson__type">(прак.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Произв. практика
+                            <span class="lesson__type">(прак.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Технич. перевод
+                            <span class="lesson__type">(прак.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Web-програм.
+                            <span class="lesson__type">(прак.) (1 п.)</span></div>
+                            <div class="lesson__place">Д331</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Web-програм.
+                            <span class="lesson__type">(прак.) (1 п.)</span></div>
+                            <div class="lesson__place">Д331</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">2 пре-та (ТС/Web)
+                            <span class="lesson__type">(прак.) (1/2 п.)</span></div>
+                            <div class="lesson__place">Д332/Д331</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Технич. средства
+                            <span class="lesson__type">(прак.) (2 п.)</span></div>
+                            <div class="lesson__place">Д332</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">2 пр-ма (СГИ/ТС)
+                            <span class="lesson__type">(прак.) (1/2 п.)</span></div>
+                            <div class="lesson__place">ДО/Д332</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Web-дизайн
+                            <span class="lesson__type">(прак.) (2 п.)</span></div>
+                            <div class="lesson__place">Д237</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Web-дизайн
+                            <span class="lesson__type">(прак.) (2 п.)</span></div>
+                            <div class="lesson__place">Д237</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Web-дизайн
+                            <span class="lesson__type">(прак.) (1 п.)</span></div>
+                            <div class="lesson__place">Д237</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">2 пр-а (WД/СГИ)
+                            <span class="lesson__type">(прак.) (1/2 п.)</span></div>
+                            <div class="lesson__place">Д237/ДО</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Спец. главы инф.
+                            <span class="lesson__type">(прак.) (2 п.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Техн. сред. в ми.
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Спец. главы инф.
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">ДО</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    
+                    
+                <!-- </div> -->
+
+                <!-- <div class="shedule__denominator-line"> -->
+                    <div class="week-title bottom-expand"><div>Знаменатель</div></div>
+                    <div class="shedule__time-card">
+                        <div>1</div>
+                        <div>8:30-9:55</div>
+                        <div>2</div>
+                        <div>10:05-11:30</div>
+                        <div>3</div>
+                        <div>11:40-13:05</div>
+                        <div class="time-table__recess">Перерыв</div>
+                        <div>4</div>
+                        <div>13:45-15:10</div>
+                        <div>5</div>
+                        <div>15:20-16:45</div>
+                        <div>6</div>
+                        <div>16:55-18:20</div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+                    <div class="day-card">
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">1</div>
+                            <div class="lesson__name">
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place"></div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">2</div>
+                            <div class="lesson__name">Произв. практ.
+                            <span class="lesson__type"></span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">3</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__recess"><span>Перерыв</span></div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">4</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">5</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                        <div class="day-card__lesson">
+                            <div class="lesson__number">6</div>
+                            <div class="lesson__name">Базы данных
+                            <span class="lesson__type">(лекц.)</span></div>
+                            <div class="lesson__place">Д128</div>
+                        </div>
+                    </div>
+
+                    
+                    
+                <!-- </div> -->
+
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
